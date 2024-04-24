@@ -37,4 +37,19 @@ d. Quais requisitos obrigatórios que não foram entregues
 - ra como chave única - faltou validação e definição no banco de dados
 
 
+INSTALAÇÃO
+- Nodejs e Mysql(workbench,xamp,wamp) instalado
+- Criar base de dados
+    CREATE DATABASE `school` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+    CREATE TABLE students AUTO_INCREMENT=1CREATE TABLE `students` (
+    `id` int NOT NULL AUTO_INCREMENT,
+    `name` varchar(100) DEFAULT NULL,
+    `email` varchar(100) DEFAULT NULL,
+    `ra` varchar(45) DEFAULT NULL,
+    `cpf` varchar(45) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+- Dar npm install na pasta raiz do projeto
+- npm start para subir o server
+- npm run dev para subir o site local
